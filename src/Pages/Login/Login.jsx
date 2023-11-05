@@ -37,7 +37,7 @@ const Login = () => {
               </div>
               <div className="form-control mt-6">
                 <input className="btn btn-primary" type="submit" value="Login" />
-                <button className='btn btn-accent my-4'><FaGoogle></FaGoogle>Google</button>
+                <button className='btn btn-secondary my-4'><FaGoogle></FaGoogle>Google</button>
               </div>
             </form>
             <p className='my-4 text-center'>New to Online Market <Link className='text-orange-600 font-bold' to="/register">Register</Link> </p>
