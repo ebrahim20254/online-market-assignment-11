@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Providers/AuthProvider";
-import logo from '../../../assets/login/logo.jpg'
+import logo from '../../../assets/login/logo1.jpg'
 
 
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </div>
                 <div className=" flex items-center">
                     <Link to="/" className="btn btn-ghost normal-case text-xl">
-                        <img className=" w-[100px] h-[100px]  -mt-6" src={logo} alt="" />
+                        <img className=" w-[200px] h-[100px]  -mt-6" src={logo} alt="" />
                     </Link>
                     <h1 className=" text-3xl font-bold">Get<span className=" text-orange-600">Job</span></h1>
                 </div>

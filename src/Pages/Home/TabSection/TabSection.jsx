@@ -6,9 +6,9 @@ const TabSection = () => {
         <div className=' text-center my-12'>
             <Tabs>
                 <TabList>
-                    <Tab>Title 1</Tab>
-                    <Tab>Title 2</Tab>
-                    <Tab>Title 3</Tab>
+                    <Tab>Web Development</Tab>
+                    <Tab>Digital Marketing</Tab>
+                    <Tab>Graphic Design</Tab>
                 </TabList>
 
                 <TabPanel>

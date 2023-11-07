@@ -1,5 +1,6 @@
 import About from "../About/About";
 import Banner from "../Banner/Banner";
+import Choose from "../Choose/Choose";
 import TabSection from "../TabSection/TabSection";
 
 
@@ -9,6 +10,7 @@ const Home = () => {
             <Banner></Banner>
             <About></About>
             <TabSection></TabSection>
+            <Choose></Choose>
         </div>
     );
 };
