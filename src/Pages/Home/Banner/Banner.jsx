@@ -1,4 +1,4 @@
-import img from '../../../assets/online-shop.jpg'
+import img from '../../../assets/image/banner.jpg'
 
 const Banner = () => {
     return (

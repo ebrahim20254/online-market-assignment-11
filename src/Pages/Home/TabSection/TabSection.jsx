@@ -3,7 +3,7 @@ import 'react-tabs/style/react-tabs.css';
 
 const TabSection = () => {
     return (
-        <div className=' text-center'>
+        <div className=' text-center my-12'>
             <Tabs>
                 <TabList>
                     <Tab>Title 1</Tab>
