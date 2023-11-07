@@ -1,0 +1,38 @@
+[
+    {
+        "digital_id": "1",
+        "image": "https://i.ibb.co/mzTNDsf/media-marketing.jpg",
+        "name": "Content Marketing",
+        "deadline": "4 month from enrollment",
+        "description": "Content marketing involves creating valuable, relevant content to attract, engage, and convert an audience, driving business growth and brand awareness.",
+        "price": "$188-299"
+      
+    },
+    {
+        "digital_id": "2",
+        "image": "https://i.ibb.co/cYPDBL4/Social-Media-Marketing.jpg",
+        "name": "Social Media Marketing",
+        "deadline": "6 month from enrollment",
+        "description": "Content marketing involves creating valuable, relevant content to attract, engage, and convert an audience, driving business growth and brand awareness.",
+        "price": "$288-399"
+      
+    },
+    {
+        "digital_id": "3",
+        "image": "https://i.ibb.co/JsPDVqQ/Video-Marketing.jpg",
+        "name": "Video Marketing",
+        "deadline": "8 month from enrollment",
+        "description": "Video marketing is a strategy that uses video content to promote products, services, or brands and engage and inform audiences.",
+        "price": "$488-699"
+      
+    },
+    {
+        "digital_id": "4",
+        "image": "https://i.ibb.co/gJXyCxq/Marketing-Automation.jpg",
+        "name": "Marketing Automation",
+        "deadline": "10 month from enrollment",
+        "description": "Marketing automation refers to using software and technology to streamline and automate repetitive marketing tasks, improving efficiency and customer engagement.",
+        "price": "$888-999"
+      
+    },
+]

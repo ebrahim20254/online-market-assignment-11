@@ -1,0 +1,38 @@
+[
+    {
+        "tabs_id": "1",
+        "image": "https://i.ibb.co/KwgWnfR/Front-End-Development.jpg",
+        "name": "Front-End Development",
+        "deadline": "3 month from enrollment",
+        "description": "Front-end development focuses on creating user interfaces for websites and applications using HTML, CSS, and JavaScript to enhance user experiences",
+        "price": "$188-299"
+      
+    },
+    {
+        "tabs_id": "2",
+        "image": "https://i.ibb.co/RB5SLMv/Back-End-Development.jpg",
+        "name": "Back-End Development",
+        "deadline": "8 month from enrollment",
+        "description": "Back-end development involves building the server-side of web applications, handling data, logic, and database interactions to support the front-end user experience.",
+        "price": "$188-299"
+      
+    },
+    {
+        "tabs_id": "3",
+        "image": "https://i.ibb.co/rkNRZ9b/full-developer.jpg",
+        "name": "Full-Stack Development",
+        "deadline": "5 month from enrollment",
+        "description": "Full-stack development encompasses both front-end and back-end development, allowing developers to work on the entire web application, from user interfaces to server-side logic",
+        "price": "$188-299"
+      
+    },
+    {
+        "tabs_id": "4",
+        "image": "https://i.ibb.co/tCRwgnh/Web-Design.jpg",
+        "name": "Web Design",
+        "deadline": "7 month from enrollment",
+        "description": "Web design involves creating visually appealing and functional websites, emphasizing layout, typography, color, and user experience to engage and inform visitors.",
+        "price": "$188-299"
+      
+    }
+]

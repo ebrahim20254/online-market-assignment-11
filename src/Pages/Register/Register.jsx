@@ -1,7 +1,13 @@
 import { Link } from 'react-router-dom';
 import img from '../../assets/login/login.svg'
+import { useContext } from 'react';
+import { AuthContext } from '../../Providers/AuthProvider';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
+
+  const {createUser} = useContext(AuthContext);
 
     const handleRegister = event =>{
         event.preventDefault();
@@ -11,6 +17,25 @@ const Register = () => {
         const email = form.email.value;
         const password = form.password.value;
         console.log(name, photo, email, password);
+
+        if(password.length < 6){
+          setLoginError('Password should be at least 6 characters or long ');
+          return;
+        }
+        else if(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
+          setLoginError(" password doesn't match")
+        }
+        else{
+          toast("Wow so easy success!");
+        }
+    
+
+        createUser(email, password)
+        .then(result =>{
+          const user = result.user;
+          console.log(user);
+        })
+        .catch(error => console.log(error))
     }
     return (
         <div className="hero min-h-screen bg-base-200 w-[90%] mx-auto my-10">
@@ -19,6 +44,7 @@ const Register = () => {
             <img src={img} alt="" />
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <ToastContainer />
             <form onSubmit={handleRegister} className="card-body">
             <div className="form-control">
             <h1 className="text-5xl font-bold text-center">Register</h1>

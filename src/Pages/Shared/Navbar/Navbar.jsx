@@ -1,13 +1,23 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../Providers/AuthProvider";
 
 
 const Navbar = () => {
+    const {user, logOut} = useContext(AuthContext);
+
+    const handleSignOut = () => {
+        logOut()
+          .then()
+          .catch()
+      }
+    
     const links = <>
-     <li><NavLink to="/">Home</NavLink></li>
-     <li><NavLink to="jobs">Add Job</NavLink></li>
-     <li><NavLink to="/posted">My Posted Jobs</NavLink></li>
-     <li><NavLink to="/bids">My Bids</NavLink></li>
-     <li><NavLink to="/login">Login</NavLink></li>
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="jobs">Add Job</NavLink></li>
+        <li><NavLink to="/posted">My Posted Jobs</NavLink></li>
+        <li><NavLink to="/bids">My Bids</NavLink></li>
+        <li><NavLink to="/login">Login</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100 my-6">
@@ -20,15 +30,24 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <a className="btn btn-ghost normal-case text-xl">Online-Job</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                  {links}
+                    {links}
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <img className=" rounded-full mr-4" src={user?.photoURL} alt="" />
+                <p className="mr-4">{user?.email}</p>
+                {
+                    user ?
+                        <button onClick={handleSignOut} className="btn">LogOut</button>
+                        :
+                        <Link to="/login">
+                            <button className="btn">Login</button>
+                        </Link>
+                }
             </div>
         </div>
     );
