@@ -3,13 +3,13 @@ import img1 from '../../../assets/image/job-career.jpg'
 
 const About = () => {
   return (
-    <div className="my-12 mx-auto">
+    <div className="mx-auto my-12">
       <h2 className=' text-4xl text-center my-4 text-orange-500 font-bold'>About Us</h2>
       <p className=' text-xl text-center  w-[50%] mx-auto'>Looking for a job that matches my skills and passions. Experienced, dedicated, and eager to contribute to a dynamic team</p>
-      <div className="hero bg-base-200 h-[600px] my-4">
-        <div className="hero-content flex-col lg:flex-row">
+      <div className="hero my-6">
+        <div className="hero-content flex-col lg:flex-row gap-8">
           <div className=' lg:w-1/2 relative'>
-            <img src={img1} className="w-1/2 rounded-lg shadow-2xl" />
+            <img src={img1} className="w-full rounded-lg shadow-2xl" />
             {/* <img src={img1} className="w-1/2 absolute right-5 top-1/2 rounded-lg border-6 border-white shadow-2xl" /> */}
           </div>
           <div className=' lg:w-1/2 space-y-6'>
