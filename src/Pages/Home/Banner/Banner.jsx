@@ -3,7 +3,7 @@ import img from '../../../assets/image/concept-banner.jpg'
 const Banner = () => {
     return (
         <div>
-            <img src={img} alt="" />
+            <img className=' rounded-xl' src={img} alt="" />
         </div>
     );
 };

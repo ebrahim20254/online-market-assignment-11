@@ -1,8 +1,8 @@
 
-import logo from '../../../assets/login/logo1.jpg'
+import logo from '../../../assets/login/ribbon.jpg'
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-base-300 text-base-content my-12">
+        <footer className="footer p-10 bg-blue-400 text-base-content my-12 rounded-lg">
             <aside>
             <img  src={logo} className=" w-[100px] h-[100px]  " alt="" />
                 <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>

@@ -7,7 +7,7 @@ const About = () => {
       <h2 className=' text-4xl text-center my-4 text-orange-500 font-bold'>About Us</h2>
       <p className=' text-xl text-center  w-[50%] mx-auto'>Looking for a job that matches my skills and passions. Experienced, dedicated, and eager to contribute to a dynamic team</p>
       <div className="hero my-6">
-        <div className="hero-content flex-col lg:flex-row gap-8">
+        <div className="hero-content bg-blue-200 flex-col lg:flex-row gap-8 rounded-xl">
           <div className=' lg:w-1/2 relative'>
             <img src={img1} className="w-full rounded-lg shadow-2xl" />
             {/* <img src={img1} className="w-1/2 absolute right-5 top-1/2 rounded-lg border-6 border-white shadow-2xl" /> */}

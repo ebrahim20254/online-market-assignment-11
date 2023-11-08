@@ -6,13 +6,14 @@ const AddJob = () => {
 
         const form = event.target;
 
-        const category = form.category.value;
-        const name = form.name.value;
-        const brand = form.brand.value;
-        const type = form.type.value;
+        const email = form.email.value;
+        const title = form.title.value;
+        const date = form.date.value;
         const description = form.description.value;
-        const rating = form.rating.value;
-        console.log(category, name, brand, type, description, rating);
+        const category = form.category.value;
+        const minimum = form.minimum.value;
+        const maximum = form.maximum.value;
+        console.log(email, title, date, description,category, minimum, maximum);
     }
     return (
         <div className=" bg-[#F4F3F0] w-[60%] mx-auto text-center text-3xl my-6 card-body rounded-xl">
@@ -22,18 +23,18 @@ const AddJob = () => {
                 <div className=" md:flex ">
                     <div className="form-control w-1/2">
                         <label className="label">
-                            <span className="label-text">Name</span>
+                            <span className="label-text">Email</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="name" placeholder="Name" className="input input-bordered w-full" />
+                            <input type="email" name="email" placeholder="Name" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control w-1/2 ml-6">
                         <label className="label">
-                            <span className="label-text">Brand Name</span>
+                            <span className="label-text">Job Title</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="brand" placeholder="Brand Name" className="input input-bordered w-full" />
+                            <input type="text" name="title" placeholder="Job title" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -41,45 +42,45 @@ const AddJob = () => {
                 <div className=" md:flex ">
                     <div className="form-control w-1/2">
                         <label className="label">
-                            <span className="label-text">Type</span>
+                            <span className="label-text">Deadline</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="type" placeholder="Type" className="input input-bordered w-full" />
+                            <input type="date" name="date" placeholder="deadline" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control w-1/2 ml-6">
                         <label className="label">
-                            <span className="label-text">Price</span>
+                            <span className="label-text">description</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="price" placeholder="Price" className="input input-bordered w-full" />
+                            <input type="text" name="description" placeholder="description" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
                 <div className=" form-control text-lg">
-                    <label>Category:</label>
+                    <label>Category</label>
                     <select name="category">
                         <option value="web development">web development</option>
-                        <option value="Category 2">Category 2</option>
-                        <option value="Category 3">Category 3</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Graphic Design">Graphic Design</option>
                     </select>
                 </div>
 
                 <div className=" md:flex ">
                     <div className="form-control w-1/2">
                         <label className="label">
-                            <span className="label-text">Short description</span>
+                            <span className="label-text">Minimum Price</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="description" placeholder="Short description" className="input input-bordered w-full" />
+                            <input type="text" name="minimum" placeholder="Minimum Price" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control w-1/2 ml-6">
                         <label className="label">
-                            <span className="label-text">Rating</span>
+                            <span className="label-text">Maximum Price</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full" />
+                            <input type="text" name="maximum" placeholder="Maximum Price" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>

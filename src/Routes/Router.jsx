@@ -5,6 +5,7 @@ import ErrorPage from "../Pages/Error/ErrorPage";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import AddJob from "../Pages/AddJob/AddJob";
+import TabSection from "../Pages/Home/TabSection/TabSection";
 
 
 
@@ -21,6 +22,14 @@ const router = createBrowserRouter([
             {
                 path: '/jobs',
                 element: <AddJob></AddJob>
+            },
+            {
+                path: '/jobs',
+                element: <AddJob></AddJob>
+            },
+            {
+                path: '/tab',
+                element: <TabSection></TabSection>
             },
             {
                 path: '/login',
