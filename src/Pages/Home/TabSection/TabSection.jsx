@@ -5,6 +5,7 @@ import DeveloperCard from './DeveloperCard';
 
 const TabSection = () => {
     const [users, setUsers] = useState([]);
+    const [activeTab, setActiveTab] = useState(0);
     
     useEffect(()=>{
         fetch('developer.json')
@@ -13,8 +14,10 @@ const TabSection = () => {
             setUsers(data)
         })
     },[])
+
     return (
         <div className=' text-center my-12'>
+            <h2 className=' text-5xl text-center font-bold text-orange-500 mb-8'>Featured Tabs</h2>
             <Tabs>
                 <TabList>
                     <Tab>Web Development</Tab>
