@@ -6,7 +6,7 @@ const Choose = () => {
     return (
         <div className=" my-12">
             <h3 className=' text-4xl text-center my-4 text-orange-500 font-bold'>How Work It</h3>
-            <p className=' text-xl text-center  w-[50%] mx-auto'>Red, sleek, and fast, the American-made Ford Mustang GT roars down the open road, a symbol of classic American muscle.</p>
+            <p className=' text-xl text-center  w-[50%] mx-auto'>Flexible remote jobs: writing, coding, virtual assistance, graphic design. Explore options, tailor skills, and seize digital work prospects.</p>
             <div className="hero bg-blue-200 my-4 rounded-xl">
                 <div className="hero-content flex-col lg:flex-row">
                     <div className=" lg:w-1/2 space-y-4 mr-12">

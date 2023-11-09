@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
-const MyJobCart = ({ myJob }) => {
+const MyJobCart = ({ myJob, loadJob, setLoadJob }) => {
     const { _id, email, title, date, description, category, minimum, maximum } = myJob;
 
     const handleDelete = () => {
@@ -30,6 +30,8 @@ const MyJobCart = ({ myJob }) => {
                                 text: "Your file has been deleted.",
                                 icon: "success"
                               });
+                              const remaining = loadJob.filter(lod => lod._id !== _id)
+                              setLoadJob(remaining);
                         }
                     })
 
