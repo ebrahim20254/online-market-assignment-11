@@ -1,4 +1,4 @@
-
+import Swal from 'sweetalert2'
 
 const AddJob = () => {
     const handleAddProduct = event => {
@@ -13,7 +13,30 @@ const AddJob = () => {
         const category = form.category.value;
         const minimum = form.minimum.value;
         const maximum = form.maximum.value;
-        console.log(email, title, date, description,category, minimum, maximum);
+
+        const newJob = {email, title, date, description, category, minimum, maximum}
+        console.log(newJob);
+
+        // send data to server 
+        fetch('http://localhost:5000/job',{
+            method: 'POST',
+            headers: {
+                'content-type' : 'application/json'
+            },
+            body: JSON.stringify(newJob)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            if(data.insertedId){
+                Swal.fire({
+                    title: 'success',
+                    text: 'add job successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                  })
+            }
+        })
     }
     return (
         <div className=" bg-[#F4F3F0] w-[60%] mx-auto text-center text-3xl my-6 card-body rounded-xl">

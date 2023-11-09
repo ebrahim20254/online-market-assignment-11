@@ -8,12 +8,16 @@ const TabSection = () => {
     const [activeTab, setActiveTab] = useState(0);
     
     useEffect(()=>{
-        fetch('developer.json')
+        fetch('http://localhost:5000/jobs')
         .then(res => res.json())
         .then(data => {
             setUsers(data)
         })
     },[])
+
+    const handleTabClick = (tabIndex) => {
+        setActiveTab(tabIndex);
+      };
 
     return (
         <div className=' text-center my-12'>
