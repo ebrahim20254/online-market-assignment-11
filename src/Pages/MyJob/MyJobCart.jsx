@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
 const MyJobCart = ({ myJob }) => {
-    const {_id, email, title, date, description, category, minimum, maximum } = myJob;
+    const { _id, email, title, date, description, category, minimum, maximum } = myJob;
 
-    const handleDelete = () =>{
+    const handleDelete = () => {
         console.log(_id);
         Swal.fire({
             title: "Are you sure?",
@@ -14,16 +15,26 @@ const MyJobCart = ({ myJob }) => {
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
             confirmButtonText: "Yes, delete it!"
-          }).then((result) => {
+        }).then((result) => {
             if (result.isConfirmed) {
-            //   Swal.fire({
-            //     title: "Deleted!",
-            //     text: "Your file has been deleted.",
-            //     icon: "success"
-            //   });
-            console.log('deleted confirm');
+
+                fetch(`http://localhost:5000/job/${_id}`,{
+                    method: 'DELETE'
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        if (data.deletedCount > 0) {
+                              Swal.fire({
+                                title: "Deleted!",
+                                text: "Your file has been deleted.",
+                                icon: "success"
+                              });
+                        }
+                    })
+
             }
-          });
+        });
     }
     return (
         <div className="card card-side bg-base-300 shadow-xl">
@@ -38,7 +49,7 @@ const MyJobCart = ({ myJob }) => {
                 <div className="card-actions justify-end -mt-32 ">
                     <div className="btn-group btn-group-vertical space-y-4">
                         <button className="btn btn-active">View</button>
-                        <button className="btn btn-secondary">Update</button>
+                        <Link to={`/update/${_id}`}><button className="btn btn-secondary">Update</button></Link>
                         <button onClick={() => handleDelete(_id)} className="btn btn-warning">Delete</button>
                     </div>
                 </div>

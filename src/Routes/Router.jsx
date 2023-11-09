@@ -9,6 +9,7 @@ import TabSection from "../Pages/Home/TabSection/TabSection";
 import MyJob from "../Pages/MyJob/MyJob";
 import MyBids from "../Pages/MyBids/MyBids";
 import DetailsPage from "../Pages/Details/DetailsPage";
+import UpdateJob from "../Pages/MyJob/UpdateJob";
 
 
 
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
                 element: <MyJob></MyJob>,
                 loader: () => fetch('http://localhost:5000/job')
                 
+            },
+            {
+                path: '/update/:id',
+                element: <UpdateJob></UpdateJob>,
+                loader: ({params}) => fetch(`http://localhost:5000/job/${params.id}`)
             },
             {
                 path: '/bids',
