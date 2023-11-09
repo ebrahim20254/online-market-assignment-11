@@ -19,11 +19,11 @@ const MyBids = () => {
             <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}
-                    <thead>
+                    <thead className=" bg-gray-200">
                         <tr>
                             <th>
                                 <label>
-                                    <input type="checkbox" className="checkbox" />
+                                    Email
                                 </label>
                             </th>
                             <th>Name</th>

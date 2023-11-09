@@ -1,14 +1,9 @@
 
 
 const MyBidsCart = ({bid}) => {
-    const {yourEmail, date} = bid;
+    const {yourEmail, date, price} = bid;
     return (
         <tr>
-            <th>
-                <label>
-                    <input type="checkbox" className="checkbox" />
-                </label>
-            </th>
             <td>
                 <div className="flex items-center space-x-3">
                     <div className="avatar">
@@ -19,9 +14,9 @@ const MyBidsCart = ({bid}) => {
             <td>
              <p>{date}</p>
             </td>
-            <td>Purple</td>
+            <td>{price}</td>
             <th>
-                <button className="btn btn-ghost btn-xs">details</button>
+                <button className="btn btn-ghost btn-xs">completed</button>
             </th>
         </tr>
     );
