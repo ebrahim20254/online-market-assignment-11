@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 
 
 const DetailsPage = () => {
@@ -6,10 +7,38 @@ const DetailsPage = () => {
         event.preventDefault()
 
         const form = event.target;
-        const name = form.name.value;
+        const price = form.price.value;
         const date = form.date.value;
-        const email = form.email.value;
-       console.log(name, date, email);
+        const yourEmail = form.yourEmail.value;
+        const buyerEmail = form.buyerEmail.value;
+       console.log(price, date, yourEmail, buyerEmail);
+
+        const bid = {
+            price, date, yourEmail, buyerEmail
+       }
+       console.log(bid);
+
+        // send bidding to server 
+        fetch('http://localhost:5000/bid',{
+            method: 'POST',
+            headers: {
+                'content-type' : 'application/json'
+            },
+            body: JSON.stringify(bid)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+
+            if(data.insertedId){
+                Swal.fire({
+                    title: 'success',
+                    text: 'add job successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                  })
+            }
+        })
 
    }
     return (
@@ -32,13 +61,13 @@ const DetailsPage = () => {
                     <label className="label">
                         <span className="label-text">Email</span>
                     </label>
-                    <input type="email"  name="email"className="input input-bordered" required />
+                    <input type="email"  name="yourEmail"className="input input-bordered" required />
                 </div>
                 <div className="form-control">
                     <label className="label">
-                        <span className="label-text">Due amount</span>
+                        <span className="label-text">Buyer Email</span>
                     </label>
-                    <input type="text" className="input input-bordered" required />
+                    <input type="email" name="buyerEmail" className="input input-bordered" required />
                 </div>
                </div>
                 <div className="form-control mt-6">
