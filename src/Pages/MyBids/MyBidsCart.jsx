@@ -1,7 +1,8 @@
 
 
-const MyBidsCart = ({bid}) => {
-    const {yourEmail, date, price} = bid;
+const MyBidsCart = ({bid, handlePending}) => {
+    const { _id,yourEmail, date, price, status} = bid;
+
     return (
         <tr>
             <td>
@@ -16,7 +17,10 @@ const MyBidsCart = ({bid}) => {
             </td>
             <td>{price}</td>
             <th>
-                <button className="btn btn-ghost btn-xs">completed</button>
+                {
+                    status === 'canceled' ? <span className=" text-orange-500 font-bold">completed</span>:
+                    <button onClick={() => handlePending(_id)} className="btn btn-ghost btn-xs">pending</button>
+                }
             </th>
         </tr>
     );
