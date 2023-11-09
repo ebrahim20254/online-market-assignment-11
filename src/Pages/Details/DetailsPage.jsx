@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 const DetailsPage = () => {
 
-    const handleBookService = event =>{
+    const handleBidJob = event =>{
         event.preventDefault()
 
         const form = event.target;
@@ -43,7 +43,7 @@ const DetailsPage = () => {
    }
     return (
         <div className="bg-[#F4F3F0] w-[60%] mx-auto text-center text-3xl my-6 card-body rounded-xl">
-            <form  onSubmit={handleBookService }>
+            <form  onSubmit={handleBidJob }>
                <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
                <div className="form-control">
                     <label className="label">

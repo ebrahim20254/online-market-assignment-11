@@ -10,6 +10,7 @@ import MyJob from "../Pages/MyJob/MyJob";
 import MyBids from "../Pages/MyBids/MyBids";
 import DetailsPage from "../Pages/Details/DetailsPage";
 import UpdateJob from "../Pages/MyJob/UpdateJob";
+import MyRequest from "../Pages/MyRequest/MyRequest";
 
 
 
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
             {
                 path: '/details/:id',
                 element: <DetailsPage></DetailsPage>
+            },
+            {
+                path: '/request',
+                element:  <MyRequest></MyRequest>
             }
         ]
     }

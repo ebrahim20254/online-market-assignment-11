@@ -38,7 +38,14 @@ const TabSection = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <h2>Any content 2</h2>
+                 {
+                        users.filter(user => user.name == "Content Marketing").map(user => <DeveloperCard key={user._id} user={user}></DeveloperCard>)
+                    }
+                </TabPanel>
+                <TabPanel>
+                 {
+                        users.filter(user => user.name == "Print Design").map(user => <DeveloperCard key={user._id} user={user}></DeveloperCard>)
+                    }
                 </TabPanel>
             </Tabs>
         </div>

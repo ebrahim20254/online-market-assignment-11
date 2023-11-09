@@ -13,7 +13,7 @@ const PrivateRoute = ({children}) => {
     if(user?.yourEmail){
         return children;
     }
-    return <Navigate  replace></Navigate>
+    return <Navigate to="login" replace></Navigate>
 };
 
 export default PrivateRoute;

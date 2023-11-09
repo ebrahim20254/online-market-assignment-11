@@ -1,48 +1,48 @@
 import img1 from '../../../assets/login/logo.jpg'
-import img2 from '../../../assets/login/logo.jpg'
-import img3 from '../../../assets/login/logo.jpg'
+import img2 from '../../../assets/login/company.jpg'
+import img3 from '../../../assets/login/software.jpg'
 
 const Choose = () => {
     return (
         <div className=" my-12">
-            <h3 className=' text-4xl text-center my-4 text-orange-500 font-bold'>How Work It</h3>
-            <p className=' text-xl text-center  w-[50%] mx-auto'>Flexible remote jobs: writing, coding, virtual assistance, graphic design. Explore options, tailor skills, and seize digital work prospects.</p>
+            <h3 className=' text-4xl text-center my-4 text-orange-500 font-bold'>Whey Choose Us</h3>
+            <p className=' text-xl text-center  w-[50%] mx-auto'>Work is where we weave the threads of effort into the fabric of success. It's not just a means to an end; it's the journey of purpose.</p>
             <div className="hero bg-blue-200 my-4 rounded-xl">
                 <div className="hero-content flex-col lg:flex-row">
                     <div className=" lg:w-1/2 space-y-4 mr-12">
-                        <h3 className=" font-bold">Why choose us</h3>
-                        <h2 className=" text-6xl font-bold">best Valued deals you will ever find</h2>
-                        <p>To find the best deals, it's essential to compare prices, read reviews, and make sure the product or service meets your needs and quality standards. Additionally, consider your budget and only buy what you actually need to ensure you're getting the best value for your money.</p>
-                        <button class="btn btn-warning">Find Details</button>
+                        <h3 className=" font-bold text-orange-600">Why choose us</h3>
+                        <h2 className=" text-6xl font-bold">Online Jobs Make People A Better Future.</h2>
+                        <p>An online marketplace is an e-commerce site that connects sellers with buyers. It's often known as an electronic marketplace and all transactions are managed by the website owner. Companies use online marketplaces to reach customers who want to purchase their products and services.</p>
+                        <button class="btn btn-warning">Good Job</button>
                     </div>
                     <div className="lg:w-1/2 space-y-6">
                         <div className=' flex gap-4'>
                             <div>
-                                <img src={img1} className='w-[100px]' alt="" />
+                                <img src={img1} className='w-[100px] rounded-full' alt="" />
                             </div>
                             <div>
-                                <h2 className=' text-2xl font-bold'>Cross Country Drivers</h2>
-                                <p className='my-2'>Cross country drivers embark on endless roads, chasing horizons with unwavering determination.</p>
-                            </div>
-                        </div>
-
-                        <div className=' flex gap-4'>
-                            <div>
-                                <img src={img2} className='w-[100px]' alt="" />
-                            </div>
-                            <div>
-                                <h2 className=' text-2xl font-bold'>All Inclusive Pricing</h2>
-                                <p className='my-2'>Get everything you need in the confidence transparency price with our all inclusive pricing</p>
+                                <h2 className=' text-2xl font-bold'>Computers are the architects of the future</h2>
+                                <p className='my-2'>he way technology is advancing, it's like computers are the architects, builders, and even the interior designers of the future.</p>
                             </div>
                         </div>
 
                         <div className=' flex gap-4'>
                             <div>
-                                <img src={img3} className='w-[100px]' alt="" />
+                                <img src={img2} className='w-[100px] rounded-full' alt="" />
                             </div>
                             <div>
-                                <h2 className=' text-2xl font-bold'>No Hidden Chargers</h2>
-                                <p className='my-2'>We believe in providing straightforward pricing and clear, honest communication with our customers.</p>
+                                <h2 className=' text-2xl font-bold'>Job in a good company</h2>
+                                <p className='my-2'>That's a fantastic goal! What kind of job are you aiming for, and what steps have you taken so far to land a position in a good company</p>
+                            </div>
+                        </div>
+
+                        <div className=' flex gap-4'>
+                            <div>
+                                <img src={img3} className='w-[100px] rounded-full' alt="" />
+                            </div>
+                            <div>
+                                <h2 className=' text-2xl font-bold'>Online work is done through software</h2>
+                                <p className='my-2'>Absolutely! Online work relies heavily on various types of software to facilitate different tasks.</p>
                             </div>
                         </div>
 
