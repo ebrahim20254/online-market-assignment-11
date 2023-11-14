@@ -35,13 +35,13 @@ const router = createBrowserRouter([
             {
                 path: '/myJob',
                 element: <MyJob></MyJob>,
-                loader: () => fetch('http://localhost:5000/job')
+                loader: () => fetch('https://online-market-server-assignment-11.vercel.app/job')
                 
             },
             {
                 path: '/update/:id',
                 element: <UpdateJob></UpdateJob>,
-                loader: ({params}) => fetch(`http://localhost:5000/job/${params.id}`)
+                loader: ({params}) => fetch(`https://online-market-server-assignment-11.vercel.app/job/${params.id}`)
             },
             {
                 path: '/bids',

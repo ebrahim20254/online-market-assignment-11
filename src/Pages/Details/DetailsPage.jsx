@@ -19,7 +19,7 @@ const DetailsPage = () => {
        console.log(bid);
 
         // send bidding to server 
-        fetch('http://localhost:5000/bid',{
+        fetch('https://online-market-server-assignment-11.vercel.app/bid',{
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

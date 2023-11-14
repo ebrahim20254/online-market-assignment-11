@@ -18,7 +18,7 @@ const MyJobCart = ({ myJob, loadJob, setLoadJob }) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/job/${_id}`,{
+                fetch(`https://online-market-server-assignment-11.vercel.app/job/${_id}`,{
                     method: 'DELETE'
                 })
                     .then(res => res.json())

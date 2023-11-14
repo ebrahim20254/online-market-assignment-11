@@ -23,7 +23,7 @@ const UpdateJob = () => {
         console.log(updateJob);
 
         // send data to server 
-        fetch(`http://localhost:5000/job/${_id}`,{
+        fetch(`https://online-market-server-assignment-11.vercel.app/job/${_id}`,{
             method: 'PUT',
             headers: {
                 'content-type' : 'application/json'
