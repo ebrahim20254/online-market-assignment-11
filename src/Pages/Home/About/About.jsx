@@ -3,7 +3,9 @@ import img1 from '../../../assets/image/job-career.jpg'
 
 const About = () => {
   return (
-    <div className="mx-auto my-12">
+    <div data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500" className="mx-auto my-12">
       <h2 className=' text-4xl text-center my-4 text-orange-500 font-bold'>About Us</h2>
       <p className=' text-xl text-center  w-[50%] mx-auto'>Looking for a job that matches my skills and passions. Experienced, dedicated, and eager to contribute to a dynamic team</p>
       <div className="hero my-6">

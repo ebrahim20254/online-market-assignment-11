@@ -4,7 +4,9 @@ import img3 from '../../../assets/login/software.jpg'
 
 const Choose = () => {
     return (
-        <div className=" my-12">
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" className=" my-12 ">
             <h3 className=' text-4xl text-center my-4 text-orange-500 font-bold'>Whey Choose Us</h3>
             <p className=' text-xl text-center  w-[50%] mx-auto'>Work is where we weave the threads of effort into the fabric of success. It's not just a means to an end; it's the journey of purpose.</p>
             <div className="hero bg-blue-200 my-4 rounded-xl">

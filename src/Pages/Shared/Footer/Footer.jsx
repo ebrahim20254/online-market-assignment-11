@@ -2,7 +2,9 @@ import { FaGoogle, FaGithub, FaTwitter, FaFacebook } from 'react-icons/fa';
 import logo from '../../../assets/login/ribbon.jpg'
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-blue-400 text-base-content my-12 rounded-lg">
+        <footer data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"  className="footer p-10 bg-blue-400 text-base-content my-12 rounded-lg">
             <aside>
             <img  src={logo} className=" w-[100px] h-[100px]  " alt="" />
                 <p>The Developer.<br />Company since at 2004</p>
